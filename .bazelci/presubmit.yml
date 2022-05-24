@@ -46,6 +46,8 @@ tasks:
     platform: windows
     environment:
       BAZEL_VC: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\BuildTools\\VC"
+    shell_commands:
+    - clang --version
     build_flags:
     - "--compiler=clang-cl"
     - "--features=layering_check"
